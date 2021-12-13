@@ -1,0 +1,124 @@
+html {
+    font-size: 20px;
+    color: white;
+  }
+  
+
+  body,html {
+    font-family: serif;
+  }
+
+  h1{
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align:center;
+    padding:20px 0;
+    
+  }
+
+  .add{
+      display: flex;
+      margin:auto;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      margin-top: 30px;
+      }
+      
+  #key{
+    margin-top: 20px;
+    height: 10px;
+    width: 100px;
+    padding:20px;
+    margin-bottom: 50px;
+
+  }
+
+
+
+ 
+
+  #memo{
+      margin-top: 20px;
+      height: 10px;
+      width: 400px;
+      padding:20px;
+      margin-bottom: 50px;
+      margin-left: 30px;
+
+      }
+     
+
+
+
+  #add-btn {
+    height: 30px;
+    width: 50px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    letter-spacing: 0.2125rem;
+    line-height: 1;
+    overflow: hidden;
+    padding: 10px; 
+    text-align: center;
+    margin-left: 20px;
+  
+  
+  }
+ 
+
+.lists_wrapper{
+    border: solid 2px white;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(71, 69, 69, 0.22);
+    width: 40%;
+    
+}
+
+ .lists {
+    color: white;
+    height: 400px;
+    margin-top: 2rem;
+    box-shadow: 0 5px 10px rgba(71, 69, 69, 0.22);
+
+    
+  }
+
+  .btn_wrapper{
+      display: flex;
+      margin: auto;
+      justify-content: center;
+  }
+
+  #clear-btn{
+    height: 30px;
+    width: 80px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    letter-spacing: 0.2125rem;
+    line-height: 1;
+    overflow: hidden;
+    padding: 10px; 
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    
+
+  }
+
+
+ 
+
+  
+
+
+  
+  
+  
