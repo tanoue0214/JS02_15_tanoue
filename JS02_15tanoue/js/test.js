@@ -5,12 +5,41 @@ $("main").fadeIn(2000);
 
 //1.Save クリックイベント
 $("#add-btn").on("click",function(){
+    
     const key = $("#key").val();
     const value = $("#memo").val();
     localStorage.setItem(key,value);
-    const html = '<tr><th>'+key+'</th><td>'+value+'</td></tr>';
+    const html =`
+    <tr>
+        <th>${key}</th>
+        <td>${value}</td>
+        <td>
+        <input type="button" value="done" id="done">
+        </td>
+
+        
+    </tr>
+    `;
     $("#lists").append(html);
-});
+   
+
+
+    $('td').on("click",function(){
+        const doneevent= $(this).children(`th`).html();
+        console.log(doneevent,"ここを削除するー") 
+        localStorage.removeItem(doneevent);
+        $(this).parent().empty();
+    });
+
+
+
+
+ 
+   
+})
+
+
+
 
 //2.clear クリックイベント
 $("#clear-btn").on("click",function(){
@@ -22,9 +51,27 @@ $("#clear-btn").on("click",function(){
 for(let i=0; i<localStorage.length; i++){
     const key   = localStorage.key(i);
     const value = localStorage.getItem(key);
-    const html = '<tr><th>'+key+'</th><td>'+value+'</td></tr>';
+    const html =`
+    <tr>
+        <th>${key}</th>
+        <td>${value}</td>
+        <input type="button" value="done" id="done">
+ 
+    </tr>
+    `;
+
     $("#list").append(html);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -33,7 +80,7 @@ for(let i=0; i<localStorage.length; i++){
 
 function countdown(){
     const now=new Date();//今の時間
-    const dlday=new Date('2021-12-18 10:00:00');
+    const dlday=new Date('2021-12-25 10:00:00');
     const differ=dlday.getTime()-now.getTime();//あと何秒か計算
     
     
